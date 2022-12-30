@@ -92,28 +92,28 @@ amount5000.addEventListener("click", () => {
 })
 
 amountInput.addEventListener("change", () => {
-    if (amountInput.value <= 25 && amountInput.value > 0) {
+    if (amountInput.value <= 37 && amountInput.value > 0) {
         donateAmountAll.forEach(el => el.classList.remove("donate-amount-active"))
         amount25.classList.add("donate-amount-active")
-    } else if (amountInput.value <= 50 && amountInput.value > 25) {
+    } else if (amountInput.value <= 75 && amountInput.value > 37) {
         donateAmountAll.forEach(el => el.classList.remove("donate-amount-active"))
         amount50.classList.add("donate-amount-active")
-    } else if (amountInput.value <= 100 && amountInput.value > 50) {
+    } else if (amountInput.value <= 175 && amountInput.value > 75) {
         donateAmountAll.forEach(el => el.classList.remove("donate-amount-active"))
         amount100.classList.add("donate-amount-active")
-    } else if (amountInput.value <= 250 && amountInput.value > 100) {
+    } else if (amountInput.value <= 375 && amountInput.value > 175) {
         donateAmountAll.forEach(el => el.classList.remove("donate-amount-active"))
         amount250.classList.add("donate-amount-active")
-    } else if (amountInput.value <= 500 && amountInput.value > 250) {
+    } else if (amountInput.value <= 750 && amountInput.value > 375) {
         donateAmountAll.forEach(el => el.classList.remove("donate-amount-active"))
         amount500.classList.add("donate-amount-active")
-    } else if (amountInput.value <= 1000 && amountInput.value > 500) {
+    } else if (amountInput.value <= 1500 && amountInput.value > 750) {
         donateAmountAll.forEach(el => el.classList.remove("donate-amount-active"))
         amount1000.classList.add("donate-amount-active")
-    } else if (amountInput.value <= 2000 && amountInput.value > 1000) {
+    } else if (amountInput.value <= 3500 && amountInput.value > 1500) {
         donateAmountAll.forEach(el => el.classList.remove("donate-amount-active"))
         amount2000.classList.add("donate-amount-active")
-    } else if (amountInput.value <= 5000 && amountInput.value > 2000) {
+    } else if (amountInput.value > 3500) {
         donateAmountAll.forEach(el => el.classList.remove("donate-amount-active"))
         amount5000.classList.add("donate-amount-active")
     }
